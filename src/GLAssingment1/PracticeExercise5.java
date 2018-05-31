@@ -20,7 +20,7 @@ driver.findElement(By.partialLinkText("Partial")).click();
 		Thread.sleep(2000);
 		
 		//Identify Submit button with ‘tagName’
-		String tagtext=driver.findElement(By.id("submit")).getAttribute("id");
+		String tagtext=driver.findElement(By.tagName("button")).getTagName();
 		System.out.println(tagtext);
 Thread.sleep(2000);
 //Click on the Link “Link Test” 

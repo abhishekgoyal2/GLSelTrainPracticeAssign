@@ -1,5 +1,6 @@
 package GLAssingment1;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,6 +17,8 @@ WebDriver driver =new ChromeDriver();
 		//Getting page title and title lenght
 		String Pagetitle=driver.getTitle();
 		System.out.println(Pagetitle);
+		
+		By username;
 		
 		int Pagetitlesize=Pagetitle.length();
 		System.out.println(Pagetitlesize);

@@ -13,16 +13,11 @@ System.setProperty("webdriver.chrome.driver", "C:\\Projects\\chromedriver_win32 
 //Opening the chrome driver and 		
 WebDriver driver =new ChromeDriver();
 		driver.get("http://demoqa.com/frames-and-windows/");
-		
-		driver.findElement(By.xpath(".//*[@id='ui-id-1']")).click();
-		Thread.sleep(500);
+
 		driver.findElement(By.xpath(".//*[@id='tabs-1']/div/p/a")).click();
 		Thread.sleep(800);
 		
-//		driver.findElement(By.xpath(".//*[@id='ui-id-2']")).click();
-//		Thread.sleep(500);
-//		driver.findElement(By.xpath(".//*[@id='tabs-2']/div/p/a")).click();
-//		Thread.sleep(800);
+
 		
 		driver.quit();
 
